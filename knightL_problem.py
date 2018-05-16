@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[6]:
-
-
 class Node():
     def __init__(self, value):
         self.value=value
@@ -63,10 +57,6 @@ def bfs(graph1,a1,b1,n):
         i+=1
     return -1
 
-
-# In[17]:
-
-
 import copy
 n=int(input())
 graph = [[] for k in range(n)]
@@ -93,27 +83,3 @@ for i in range(1,n):
     print(*values)
 end = time.time()
 print(end - start)
-
-
-# ##### a=[1,2,3,4]
-# a1=a[1:]
-# a1
-
-# In[28]:
-
-
-graph = [[] for k in range(n)]
-for l in range(0,n):
-    for m in range(0,n):
-        graph[l].append(Node([l,m]))
-
-
-# In[29]:
-
-
-for i in range(0,5):
-    graph1=graph[:]
-    for l in range(0,n):
-        for m in range(0,n):
-            print(graph[l][m].value,grapg)
-
