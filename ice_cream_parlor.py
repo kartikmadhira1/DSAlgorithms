@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[11]:
-
-
 def icecreamParlor(m, arr):
     ret_arr=[]
     #alloting a freq array for the costs associated
