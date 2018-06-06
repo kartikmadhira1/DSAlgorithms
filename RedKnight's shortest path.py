@@ -73,7 +73,7 @@ while(len(bfs_queue)!=0):
         print(dam_dict[(end_X,end_Y)][2])
         print(*final_list)
         break
-$print(bfs_queue)
+print(bfs_queue)
 if(len(bfs_queue)==0):
     print('Impossible')
 
