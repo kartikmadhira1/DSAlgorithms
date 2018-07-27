@@ -1,9 +1,4 @@
 
-# coding: utf-8
-
-# In[139]:
-
-
 import numpy as np
 class Node():
     def __init__(self, value):
@@ -146,9 +141,6 @@ class Graph():
         return tmp_city_names
 
 
-# In[100]:
-
-
 graph=Graph()
 graph.insert_edge(51, 0, 1)     # MV <-> SF
 graph.insert_edge(51, 1, 0)     # SF <-> MV
@@ -167,67 +159,4 @@ graph.insert_edge(932, 4, 2)    # Berlin <-> London
 graph.insert_edge(9471, 2, 5)   # London <-> Sao Paolo
 graph.insert_edge(9471, 5, 2)   # Sao Paolo <-> London1, 1, 3), (102, 1, 4), (103, 3, 4)]
 
-
-#graph.set_node_names(('Mountain View',   # 0
- #                     'San Francisco',   # 1
-  #                    'London',          # 2
-   #                   'Shanghai',        # 3
-    #                  'Berlin',          # 4
-     #                 'Sao Paolo',       # 5
-      #                'Bangalore'))      # 6 
-
-
-# In[101]:
-
-
-graph.dfs(2)
-
-
-# ###### graph.nodes[0].edges
-
-# In[160]:
-
-
-a=(graph.adjacency_matrix())
-a[:][:]
-
-
-# In[44]:
-
-
-a=[1,2,3]
-b=[3,4,5]
-a.b.append(2)
-
-
-# In[17]:
-
-
-graph.max_node_val()
-
-
-# In[28]:
-
-
-graph.adjacency_matrix()
-
-
-# In[124]:
-
-
-a=graph.get_adjacency_list()
-print(a)
-print([x[0] for x in a])
-
-
-# In[377]:
-
-
-graph.get_edge_list()
-
-
-# In[378]:
-
-
-graph.adjacency_matrix()
 
