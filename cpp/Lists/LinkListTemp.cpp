@@ -13,6 +13,7 @@ template <typename T>
 class Node{
 public: //should all this be public????/
     T value;
+<<<<<<< HEAD
     Node<T> *next=NULL;
 };
 
@@ -103,17 +104,41 @@ void LinkedList<T>::printList() {
 Node<T> *current;
 current=head;
     while(current->next!=NULL){
+=======
+    Node<T> *next;
+};
+
+//define a class of Linkedlist that runs on the simple nodes
+template <typename T>
+class LinkedList{
+public:
+    //will this be a pointer?
+    Node<T> *head;
+    Node<T> *tail;
+    void insert(Node<T> *node);
+    void printList();
+};
+
+template <typename T>
+void LinkedList<T>::printList() {
+Node<T> *current= new Node<T>;
+    while(head->next!=NULL){
+>>>>>>> 920defbccf456c119e45518f27dc3de140a3f395
         cout<<current->value<<'\n';
         current=current->next;
     }
    cout<<current->value<<'\n';
 }
 
+<<<<<<< HEAD
 //this method appends a value into the list like a stack.
+=======
+>>>>>>> 920defbccf456c119e45518f27dc3de140a3f395
 template <typename T>
 void LinkedList<T>::insert(Node<T> *node) {
     // make a copy
     //iterate till the current one points to a NULL
+<<<<<<< HEAD
     Node<T> *current;
     current=head;
     //check for the head if its null then we address the case
@@ -128,6 +153,15 @@ void LinkedList<T>::insert(Node<T> *node) {
         head=node;
     }
  }
+=======
+    Node<T> *current = new Node<T>;
+    current=head;
+    while(current->next!=NULL){
+        current=current->next;
+    }
+    current->next=node;
+}
+>>>>>>> 920defbccf456c119e45518f27dc3de140a3f395
 
 int main(){
     //make a new linkedlist
@@ -136,6 +170,7 @@ int main(){
     Node<float> *first= new Node<float>;
     Node<float> *second= new Node<float>;
     Node<float> *third= new Node<float>;
+<<<<<<< HEAD
     Node<float> *fourth= new Node<float>;
 
     first->value=12.34;
@@ -155,4 +190,22 @@ int main(){
     list.deletePos(2);
     list.printList();
 }
+=======
+
+    first->value=12.34;
+    first->next=NULL;
+
+    second->value=2.34;
+    second->next=NULL;
+
+    third->value=31.3434;
+    third->next=NULL;
+
+    list.insert(first);
+    list.insert(second);
+    list.insert(third);
+    list.printList();
+}
+
+>>>>>>> 920defbccf456c119e45518f27dc3de140a3f395
 
