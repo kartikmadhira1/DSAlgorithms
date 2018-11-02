@@ -1,5 +1,12 @@
 #include <iostream>
 
+/* Methods to Linked List object
+ * - Insert
+ * - Get Position
+ * - insert at a position
+ * - Delete from a position
+ */
+
 using namespace std;
 
 struct Element{
@@ -8,12 +15,7 @@ struct Element{
     struct Element *next;
 
 };
-/* Methods to Linked List object
- * - Insert
- * - Get Position
- * - insert at a position
- * - Delete from a position
- */
+
 class LinkedList{
     Element *head;
 public:
