@@ -1,6 +1,4 @@
 #include <iostream>
-
-using namespace std;
 /*
  * it will have the following methods:
  * 1. Get(i) - returns value of selected index.
@@ -8,6 +6,7 @@ using namespace std;
  * 3. Search(v) - returns the first occurance of v
  * 4. Remove(i) - removes item in ith index.
  */
+using namespace std;
 
 class List{
 private:
