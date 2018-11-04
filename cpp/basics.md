@@ -59,3 +59,5 @@
     }
 ~~~
 
+Q.1 Why is selection sort better than bubble sort?
+	In general, insertion sort will write to the array O(n2) times, whereas selection sort will write only O(n) times. For this reason selection sort may be preferable in cases where writing to memory is significantly more expensive than reading, such as with EEPROM or flash memory.![Link](https://stackoverflow.com/questions/13672893/is-selection-sort-faster-than-insertion-for-big-arrays)
