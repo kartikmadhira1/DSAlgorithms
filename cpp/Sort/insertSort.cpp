@@ -3,6 +3,13 @@
 
 using namespace std;
 
+/*
+ * Algorithm:
+ * 1. For every element i in arr:
+ * 2.   Take i+1th element and swap if its smaller.
+ * This is makes the number of swaps lesser than other sorts.
+ */
+
 void insertionSort(int arr[],int arrSize);
 
 void insertionSort(int arr[], int arrSize) {
