@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[160]:
-
-
 import numpy as np
 class Node():
     def __init__(self, value):
