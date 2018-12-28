@@ -1,9 +1,4 @@
 
-# coding: utf-8
-
-# In[9]:
-
-
 def Quicksort(array):
     n=len(array)
     counter=0
@@ -33,15 +28,9 @@ def Quicksort(array):
     return array
 
 
-# In[30]:
-
-
 import random 
 test=random.sample(range(1,10000),999)
 test
-
-
-# In[32]:
 
 
 import time
