@@ -18,3 +18,6 @@ Fun implementation of Data Structures and Algorithms.
 6. [Simple Graph traversal](https://github.com/kartikmadhira1/DS_Algorithms/blob/master/python/hackerrank_misc/graph_traversal.py) 
 
 
+#### Videos:
+
+1. [Quicksort](https://www.youtube.com/watch?v=kUon6854joI&list=PL5-lf7VniEzXlp1EHQLUyMPU9LIYR7l-l&index=23)
