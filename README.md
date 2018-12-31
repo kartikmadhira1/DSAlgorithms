@@ -21,3 +21,8 @@ Fun implementation of Data Structures and Algorithms.
 #### Videos:
 
 1. [Quicksort](https://www.youtube.com/watch?v=kUon6854joI&list=PL5-lf7VniEzXlp1EHQLUyMPU9LIYR7l-l&index=23)
+
+
+#### Random references:
+
+1. [On vectors](http://www.cplusplus.com/reference/vector/vector/)
