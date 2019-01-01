@@ -1,4 +1,4 @@
-# DS_Algorithms
+# Data Structures and Algorithms
 Fun implementation of Data Structures and Algorithms.
 
 ## Random Questions
