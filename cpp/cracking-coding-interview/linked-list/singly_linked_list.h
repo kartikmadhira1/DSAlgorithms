@@ -12,9 +12,9 @@ struct Node {
 template <typename T>
 class SinglyLinkedList {
  protected:
-    Node<T> *tail;
     int length;
  public:
+    Node<T> *tail;
     void insert(T val);
     void remove(T val);
     void show_list();
@@ -64,7 +64,7 @@ void SinglyLinkedList<T>::remove(T val) {
         tail->next = tail->next->next;
         delete temp;
         tail = temp_tail;
-        }s
+        }
     length--;
 }
 
