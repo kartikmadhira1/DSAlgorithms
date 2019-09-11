@@ -85,7 +85,6 @@ void SinglyLinkedList<T>::insert(T val) {
 
 template <typename T>
 void SinglyLinkedList<T>::show_list() {
-    std::cout << "The linked list is " << "\n";
     Node<T> *temp = tail;
     while (tail->next != nullptr) {
         std::cout << tail->value << "\n";

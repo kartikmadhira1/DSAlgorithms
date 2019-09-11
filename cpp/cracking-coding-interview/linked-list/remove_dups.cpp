@@ -1,6 +1,9 @@
 // Copyright 2019 Kartik Madhira
 
 // Remove the duplicates from an unsorted linked list.
+// TO DO: This is a bad implementation of duplication as 
+// pointers allocated with new in the linked list class
+// are not being destroyed in the function.
 #include <iostream>
 #include "singly_linked_list.h" 
 #include <map>
@@ -39,5 +42,6 @@ int main() {
     li_list.show_list();
     remove_duplicates(&li_list);
     li_list.show_list();
+    return 0;
 }
 
