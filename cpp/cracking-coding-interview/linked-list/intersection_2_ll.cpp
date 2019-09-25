@@ -5,8 +5,9 @@
 #include <map>
 #include "singly_linked_list.h"
 
+using std::cout;
 template<typename T>
-Node<T> intersection_2_ll(SinglyLinkedList<T> first_list, SinglyLinkedList<T> sec_list) {
+Node<T>* intersection_2_ll(SinglyLinkedList<T> &first_list, SinglyLinkedList<T> &sec_list) {
     // Essentially create a map of <address> and a <int>
     // and then iterate over the first and second list
     // Create a map for the first list
@@ -29,15 +30,24 @@ Node<T> intersection_2_ll(SinglyLinkedList<T> first_list, SinglyLinkedList<T> se
 }
 
 int main() {
-SinglyLinkedList<int> list_1;
+    SinglyLinkedList<int> list_1;
     list_1.insert(2);
     list_1.insert(3);
+    Node<int> inter_node(nullptr, 55);
+    list_1.add_node(inter_node);
     list_1.insert(5);
     list_1.insert(3);
-    int a = 5;
-    list_1.insert(5);
-    list_1.insert(3);
-    list_1.insert(2);
-    list_1.insert(2);
+    cout << "first list: \n";
 
+    list_1.show_list();
+    cout << "second list: \n";
+    SinglyLinkedList<int> list_2;
+    list_2.insert(53);
+    list_2.insert(33);
+    list_2.add_node(inter_node);
+    list_2.insert(23);
+    list_2.insert(23);
+    list_2.show_list();
+    Node<int> *ret_node = intersection_2_ll(list_1, list_2);
+    cout << "intersecting node is " <<ret_node->value << "\n";
 }

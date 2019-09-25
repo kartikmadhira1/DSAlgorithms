@@ -14,12 +14,14 @@ class SinglyLinkedList {
  protected:
     int length;
  public:
+    SinglyLinkedList<T>():tail(nullptr), length(0) {}
+
     Node<T> *tail;
     void insert(T val);
     void remove(T val);
     void show_list();
     int find_pos(T val);
-    SinglyLinkedList<T>():tail(nullptr), length(0) {}
+    void add_node(Node<T> &node);
     ~SinglyLinkedList();
 };
 
@@ -92,4 +94,19 @@ void SinglyLinkedList<T>::show_list() {
     }
     std::cout << tail->value << "\n";
     tail = temp;
+}
+
+template <typename T>
+void SinglyLinkedList<T>::add_node(Node<T> &node) {
+    if (tail == nullptr) {
+        tail = &node;
+    } else {
+        Node<T> *temp = tail;
+        while (tail->next != nullptr) {
+            tail = tail->next;
+        }
+        tail->next = &node;
+        tail = temp;
+    }
+    length++;
 }
